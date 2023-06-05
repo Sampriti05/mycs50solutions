@@ -1,0 +1,22 @@
+Times:
+
+10 simulations: 0m0.026s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.035s
+10000 simulations: 0m0.107s
+100000 simulations: 0m0.704s
+1000000 simulations: 0m7.195s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+My prediction was that as N increases the time taken by the program would increase and it is proven correct by the above timings.
+the timings are increasing exponentially
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+I believe 100000 simulations would be a good boundary as from the results above we can see that the difference between the timing as we add more zeros is increasing
+while the difference between 10000 and 100000 is 0m0.600 estimate the difference between 100000 and 1000000 and 0m7.000 estimate which will give a much larger cost
+hence 100000 is the sweet spot which proveds a balance between accuracy and cost effectiveness.

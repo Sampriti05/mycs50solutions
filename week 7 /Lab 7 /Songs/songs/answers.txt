@@ -1,0 +1,15 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+audio aura can be linked to category of the song hence for example a red aura can represent songs of a angry nature such as rock and phonk music
+so from a listeners top hundred we find out the category of music they have most listened to for example they have listened to many rock songs
+we can give them a red aura. Same applies to other categories, to assign categories to colors we can do some research in the art and literature fields
+example yeallow can be joyous music which gives summer vibes.
+
+if the top categories are tied say summer edm songs and rock songs we can give them a mixture of a red and yellow aura
+
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+
+It may not be representative as the listener might not only use spotify as their source of music they could also listen to music n Youtube. The songs they listen on youtube
+may also be of completely different category such as rap. A better way of calculating their aura would be to link databases such as Spotify Apple Music and Youtube to give
+a more accurate description.

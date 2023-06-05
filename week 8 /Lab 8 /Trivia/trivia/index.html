@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            function multiopt(event) {
+                event.preventDefault();
+            if (event.target.tagName == 'BUTTON')
+            {
+                if (event.target.innerHTML == " Iron man") {
+                    event.target.style.backgroundColor = "green";
+                    document.querySelector("#answer1").innerHTML = 'Correct';
+                }
+                else {
+                    event.target.style.backgroundColor = "red";
+                    document.querySelector("#answer1").innerHTML = 'Incorrect';
+                }
+            }
+        }
+
+
+            function freeres()
+            {
+                let answer = document.querySelector("#answer2");
+                let input = document.querySelector("input");
+                if (document.querySelector("#response").value == "Avengers: Infinity War")
+                {
+                    input.style.backgroundColor = "green";
+                    answer.innerHTML = 'Correct';
+                }
+
+                else
+                {
+                    input.style.backgroundColor = "red";
+                    answer.innerHTML = 'Incorrect';
+                }
+
+            }
+            function check()
+            {
+                document.querySelector("div.section").addEventListener("click", multiopt);
+                document.querySelector("#check").addEventListener("click", freeres);
+            }
+
+            document.addEventListener("DOMContentLoaded", check);
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <h3>
+                    Who didn't turn to ashes once Thanos snapped his fingers twice?
+                </h3>
+                <form>
+
+                        <button class="Incorrect"> Black Panther</button>
+                        <button class="Incorrect"> Spiderman</button>
+                        <button class="Correct"> Iron man</button>
+                        <button class="Incorrect"> Groot</button>
+                        <button class="Incorrect"> Star-Lord</button>
+
+                        <p id="answer1"></p>
+                </form>
+           </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <h3>
+                    Which movie did Thanos sacrifice Gamora?(Please ensure an accurate answer & capitalize your initials!)
+                </h3>
+                    <input id="response" type ="text" placeholder ="Movie">
+                    <button id = "check">Check Answer</button>
+                    <p id = "answer2"></p>
+            </div>
+
+        </div>
+
+    </body>
+</html>

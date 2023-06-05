@@ -1,0 +1,3 @@
+Prompt user to type in an integer
+if integer between 1 to 8 inclusive of 1 & 8 proceed
+if integer not within range reprompt user till it fits the range

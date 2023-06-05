@@ -1,0 +1,88 @@
+sort1 uses: Bubble sort
+bubble sort will have the slowest timing in the random set
+comparing timings for random50000 across sort1 , sort2 and sort3 -> sort1 gives the longest timing
+
+sort2 uses: merge sort
+comparing timings for random50000 across sort1 , sort2 and sort3 -> sort2 gives the shortest timing
+
+sort3 uses: Selection sort
+comparing timings for sorted50000 across sort1, sort2 and sort3 -> sort3 gave the slowest timing
+
+
+
+sort1:
+
+random5000
+real    0m0.088s
+reversed5000
+real    0m0.104s
+sorted5000
+real    0m0.023s
+
+random10000
+real    0m0.307s
+reversed10000
+real    0m0.255s
+sorted10000
+real    0m0.076s
+
+random50000
+real    0m7.323s
+reversed50000
+real    0m5.633s
+sorted50000
+real    0m0.342s
+
+
+
+
+
+sort2
+
+random5000
+real    0m0.044s
+reversed5000
+real    0m0.044s
+sorted5000
+real    0m0.045s
+
+
+random10000
+real    0m0.176s
+reversed10000
+real    0m0.057s
+sorted10000
+real    0m0.063s
+
+random50000
+real    0m0.549s
+reversed50000
+real    0m0.348s
+sorted50000
+real    0m0.270s
+
+
+
+sort3
+
+random5000
+real    0m0.069s
+reversed5000
+real    0m0.049s
+sorted5000
+real    0m0.069s
+
+random10000
+real    0m0.160s
+reversed10000
+real    0m0.171s
+sorted10000
+real    0m0.205s
+
+random50000
+real    0m3.034s
+reversed50000
+real    0m3.410s
+sorted50000
+real    0m2.994s
+
